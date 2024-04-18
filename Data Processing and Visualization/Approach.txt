@@ -1,0 +1,9 @@
+1. API Development (`scores.py`): Created a FastAPI server to expose an endpoint for fetching the student scores.
+Defined a function `scoresfn()` to generate the sample scores of students.
+Implemented a route `/health-check` to check the server's status and verify that the server is running correctly.
+Implemented a GET endpoint `/scores-api` to retrieve the score data by calling the `scoresfn()` function to get the student scores data and return the data in JSON format if available, otherwise return an error message.
+
+2. Data Retrieval and Storage (`Data Processing and Visualization.ipynb`): Fetched score data from the API created in `scores.py`, calculated the average score and displayed the retrieved data.
+Sent a GET request to the API endpoint `/scores-api` to fetch the score data and extracted the JSON data from the response if the status code is 200 else print an error message.
+Stored the data in a dataframe df and calculated the average score of the students.
+Created a bar chart using Matplotlib to visualize the student scores.

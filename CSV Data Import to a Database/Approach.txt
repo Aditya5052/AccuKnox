@@ -1,0 +1,4 @@
+1. Establish a connection to the SQLite database (conn) and create a cursor (cursor) to execute SQL commands.
+2. Create a table named users in the SQLite database with columns for Id, Name, and Email.
+3. Open the CSV file in read mode and create a csv.DictReader object to read the CSV data row-wise as dictionaries.
+4. Iterate over each row in the CSV file to extract the Name and Email from each row and executed an INSERT command to insert the Name and Email into the users table.

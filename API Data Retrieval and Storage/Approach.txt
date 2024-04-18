@@ -1,10 +1,10 @@
-1. API Development (`books.py`): Created a FastAPI server to expose an endpoint for fetching book data.
-Defined a function `booksfn()` to generate sample book data.
-Implemented a route `/health-check` to check the server's status and verify that the server is running correctly.
-Implemented a GET endpoint `/books-api` to retrieve book data by calling the `booksfn()` function to get book data and returning the book data in JSON format if available, otherwise return an error message.
+1. API Development (books.py): Created a FastAPI server to expose an endpoint for fetching book data.
+Defined a function booksfn() to generate sample book data.
+Implemented a route /health-check to check the server's status and verify that the server is running correctly.
+Implemented a GET endpoint /books-api to retrieve book data by calling the booksfn() function to get book data and returning the book data in JSON format if available, otherwise return an error message.
 
-2. Data Retrieval and Storage (`API Data Retrieval and Storage.ipynb`): Fetched book data from the API created in `books.py`, stored it in a SQLite database 'books' and displayed the retrieved data.
-Sent a GET request to the API endpoint `/books-api` to fetch book data and extracted the JSON data from the response if the status code is 200 else print an error message.
-Connected to the SQLite database (`books.db`) and created a table named `books`.
-Iterated over the book data and insert each book into the `books` table.
-Read the contents of the `books` table and printed them.
+2. Data Retrieval and Storage (API Data Retrieval and Storage.ipynb): Fetched book data from the API created in books.py, stored it in a SQLite database 'books' and displayed the retrieved data.
+Sent a GET request to the API endpoint /books-api to fetch book data and extracted the JSON data from the response if the status code is 200 else print an error message.
+Connected to the SQLite database (books.db) and created a table named books.
+Iterated over the book data and insert each book into the books table.
+Read the contents of the books table and printed them.
